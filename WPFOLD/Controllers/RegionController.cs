@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WPFOLD.Daos;
+using WPFOLD.Daos.IDaos;
 using WPFOLD.Models;
 
 namespace WPFOLD.Controllers
 {
     public class RegionController
     {
-        RegionDAO regionDAO = new RegionDAO();
+        IRegionDAO regionDAO = new RegionDAO();
 
         public List<Region> Get()
         {
